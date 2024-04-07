@@ -1,0 +1,17 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: reservation-service
+  data:
+    mongodb:
+      uri: mongodb://admin:pass@localhost:27017
+      database: reservations
+  cloud:
+    consul:
+      discovery:
+        enabled: true
+      host: localhost
+      port: 8500
+
+access-token-secret-key: secretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecret
